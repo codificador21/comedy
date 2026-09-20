@@ -1,0 +1,3 @@
+# never publish the name -> URL map or the outreach notes
+.slugmap.json
+OUTREACH.md

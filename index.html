@@ -3,144 +3,150 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Stand-Up Portfolio Sites — Five Comedians</title>
-<meta name="description" content="Five single-page portfolio websites for Indian stand-up comedians — Kaustubh Agarwal, RJ Vidit, Pratyush Chaubey, Rohit Singh and Rajat Sood. Built from public sources as design demos.">
+<title>Arpit Bhushan — Websites for people who perform</title>
+<meta name="description" content="I build fast, hand-coded websites for comedians, creators and small businesses. No templates, no page builders — plain HTML, CSS and JavaScript that loads instantly on a phone.">
 <meta name="theme-color" content="#0d0d10">
 <link rel="canonical" href="https://codificador21.github.io/comedy/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://codificador21.github.io/comedy/">
-<meta property="og:title" content="Stand-Up Portfolio Sites — Five Comedians">
-<meta property="og:description" content="Five single-page portfolio websites for Indian stand-up comedians, each with its own theme.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Stand-Up Portfolio Sites — Five Comedians">
-<meta name="twitter:description" content="Five single-page portfolio websites for Indian stand-up comedians, each with its own theme.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0d10'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial' font-size='17' font-weight='700' fill='%23f0f0f2' text-anchor='middle'%3E5%3C/text%3E%3C/svg%3E">
+<meta property="og:title" content="Arpit Bhushan — Websites for people who perform">
+<meta property="og:description" content="Hand-coded websites for comedians, creators and small businesses. Fast on a phone, built to be found.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Arpit Bhushan — Websites for people who perform">
+<meta name="twitter:description" content="Hand-coded websites for comedians, creators and small businesses.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0d10'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial' font-size='16' font-weight='700' fill='%23ffd166' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Arpit Bhushan",
+  "jobTitle": "Web Developer",
+  "description": "Builds hand-coded websites for comedians, creators and small businesses.",
+  "email": "mailto:arpitbhushan1@gmail.com",
+  "url": "https://codificador21.github.io/comedy/",
+  "sameAs": ["https://github.com/codificador21"]
+}
+</script>
 <style>
 :root{--bg:#0d0d10;--bg2:#15161a;--line:#26282f;--fg:#f0f0f2;--dim:#9a9ba4;--accent:#ffd166;
 --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;--pad:clamp(20px,5vw,64px)}
-*{box-sizing:border-box}
+*{box-sizing:border-box;-webkit-tap-highlight-color:rgba(255,209,102,.16)}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block;height:auto}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.68 var(--sans);-webkit-font-smoothing:antialiased}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.wrap{max-width:1100px;margin:0 auto;
+.wrap{max-width:860px;margin:0 auto;
   padding-left:calc(var(--pad) + env(safe-area-inset-left,0px));
   padding-right:calc(var(--pad) + env(safe-area-inset-right,0px))}
-header{padding:clamp(52px,10vw,110px) 0 clamp(32px,5vw,56px);border-bottom:1px solid var(--line)}
+header{padding:clamp(56px,11vw,120px) 0 clamp(34px,5vw,56px);border-bottom:1px solid var(--line);
+  background:radial-gradient(ellipse 70% 60% at 15% 0%,rgba(255,209,102,.10),transparent 60%)}
 .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
-h1{margin:0;font-size:clamp(2.1rem,7vw,3.9rem);line-height:1.04;letter-spacing:-.035em;font-weight:800;max-width:18ch}
-.lede{margin:22px 0 0;max-width:60ch;color:var(--dim);font-size:clamp(1rem,2.2vw,1.12rem)}
-main{padding:clamp(40px,6vw,72px) 0 clamp(50px,7vw,90px)}
-.grid{display:grid;gap:18px;grid-template-columns:1fr}
-@media(min-width:660px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
-.card{display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--line);border-radius:16px;
-  overflow:hidden;text-decoration:none;transition:border-color .25s,transform .25s}
-.card:hover{border-color:var(--accent);transform:translateY(-4px)}
-.card .shot{position:relative;aspect-ratio:16/10;overflow:hidden;background:#000}
-.card .shot img{width:100%;height:100%;object-fit:cover;object-position:center 22%;opacity:.9;transition:opacity .3s,transform .5s}
-.card:hover .shot img{opacity:1;transform:scale(1.04)}
-.card .swatch{position:absolute;left:12px;bottom:12px;display:flex;gap:5px}
-.card .swatch i{width:13px;height:13px;border-radius:50%;border:1px solid rgba(255,255,255,.35)}
-.card .body{padding:17px 18px 19px;flex:1;display:flex;flex-direction:column;gap:6px}
-.card h2{margin:0;font-size:1.16rem;letter-spacing:-.02em}
-.card .theme{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.card p{margin:2px 0 0;color:var(--dim);font-size:14px;flex:1}
-.card .go{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg);margin-top:8px}
-footer{border-top:1px solid var(--line);padding:32px 0 calc(48px + env(safe-area-inset-bottom,0px));color:var(--dim);font-size:13px}
-.disc{font-family:var(--mono);font-size:11px;line-height:1.75;border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:14px}
+h1{margin:0;font-size:clamp(2.2rem,8vw,3.8rem);line-height:1.03;letter-spacing:-.035em;font-weight:800}
+.lede{margin:24px 0 0;max-width:56ch;color:var(--dim);font-size:clamp(1.02rem,2.3vw,1.16rem)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:13px 24px;
+  border-radius:11px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;
+  transition:background .2s,color .2s,transform .2s}
+.btn:hover{background:var(--accent);color:#0d0d10;transform:translateY(-2px)}
+.btn.solid{background:var(--accent);color:#0d0d10}
+.btn.solid:hover{background:transparent;color:var(--accent)}
+section{padding:clamp(46px,7vw,84px) 0;border-bottom:1px solid var(--line)}
+h2{margin:0 0 26px;font-size:clamp(1.4rem,4.4vw,2rem);letter-spacing:-.025em}
+.what{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:680px){.what{grid-template-columns:repeat(2,1fr)}}
+.item{background:var(--bg2);border:1px solid var(--line);border-radius:15px;padding:22px}
+.item h3{margin:0 0 7px;font-size:1.05rem;letter-spacing:-.015em}
+.item p{margin:0;color:var(--dim);font-size:14.5px}
+.item .tag{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:9px}
+ul.ticks{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+ul.ticks li{padding-left:26px;position:relative;color:var(--dim);font-size:15px}
+ul.ticks li::before{content:"";position:absolute;left:4px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+ul.ticks b{color:var(--fg);font-weight:600}
+.contact{display:grid;gap:11px;margin:0;padding:0;list-style:none}
+.contact a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;
+  background:var(--bg2);border:1px solid var(--line);border-radius:13px;padding:14px 20px;
+  text-decoration:none;font-size:15px;transition:border-color .2s,background .2s,transform .2s}
+.contact a:hover{border-color:var(--accent);background:#191a1f;transform:translateY(-2px)}
+.contact .h{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.contact .v{overflow-wrap:anywhere;text-align:right}
+footer{padding:30px 0 calc(48px + env(safe-area-inset-bottom,0px));color:var(--dim);font-size:13px}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition-duration:.001ms!important}}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap">
-    <p class="eyebrow">Five sites &middot; Five themes &middot; No two alike</p>
-    <h1>Stand-up portfolio sites</h1>
-    <p class="lede">Single-page websites for five Indian stand-up comedians. Every fact, photo and figure is traced to a public source, and each site keeps a <code>notes.md</code> listing those sources and anything that could not be verified.</p>
+    <p class="eyebrow">Arpit Bhushan &middot; Web developer &middot; India</p>
+    <h1>I build websites for people who perform.</h1>
+    <p class="lede">Hand-written HTML, CSS and JavaScript &mdash; no templates, no page builders, nothing to slow it down. Your set list, your tour dates, your booking form, loading instantly on the phone your audience actually uses.</p>
+    <div class="cta">
+      <a class="btn solid" href="mailto:arpitbhushan1@gmail.com?subject=Website%20enquiry">Email me</a>
+      <a class="btn" href="#what">What I build</a>
+    </div>
   </div>
 </header>
 
 <main>
+<section id="what">
   <div class="wrap">
-    <div class="grid">
-
-      <a class="card" href="kaustubh-agarwal/">
-        <span class="shot">
-          <img src="kaustubh-agarwal/images/kaustubh-agarwal-district-artist-640.jpg" alt="Kaustubh Agarwal" width="640" height="640" loading="lazy">
-          <span class="swatch" aria-hidden="true"><i style="background:#0a0b0d"></i><i style="background:#e6ff3b"></i><i style="background:#2a3037"></i></span>
-        </span>
-        <span class="body">
-          <span class="theme">Dark circuit</span>
-          <h2>Kaustubh Agarwal</h2>
-          <p>Delhi Hindi stand-up. Creator of the comedy quiz show Akal Ke Ghode.</p>
-          <span class="go">Open site &rarr;</span>
-        </span>
-      </a>
-
-      <a class="card" href="rj-vidit/">
-        <span class="shot">
-          <img src="rj-vidit/images/vidit-sharma-youtube-avatar-640.jpg" alt="Vidit Sharma, RJ Vidit" width="640" height="640" loading="lazy">
-          <span class="swatch" aria-hidden="true"><i style="background:#f5ede1"></i><i style="background:#c8441f"></i><i style="background:#1f6f6b"></i></span>
-        </span>
-        <span class="body">
-          <span class="theme">Retro FM radio</span>
-          <h2>RJ Vidit</h2>
-          <p>Radio jockey by day, comic by night. Touring the solo show Namak Kam Hai.</p>
-          <span class="go">Open site &rarr;</span>
-        </span>
-      </a>
-
-      <a class="card" href="pratyush-chaubey/">
-        <span class="shot">
-          <img src="pratyush-chaubey/images/pratyush-chaubey-youtube-avatar-640.jpg" alt="Pratyush Chaubey" width="640" height="640" loading="lazy">
-          <span class="swatch" aria-hidden="true"><i style="background:#f7a600"></i><i style="background:#d81b60"></i><i style="background:#00897b"></i></span>
-        </span>
-        <span class="body">
-          <span class="theme">Desi pop</span>
-          <h2>Pratyush Chaubey</h2>
-          <p>Software engineer turned stand-up. Family, small towns and office-life trauma.</p>
-          <span class="go">Open site &rarr;</span>
-        </span>
-      </a>
-
-      <a class="card" href="rohit-singh/">
-        <span class="shot">
-          <img src="rohit-singh/images/rohit-singh-youtube-avatar-640.jpg" alt="Rohit Singh" width="640" height="640" loading="lazy">
-          <span class="swatch" aria-hidden="true"><i style="background:#fbfaf7"></i><i style="background:#131211"></i><i style="background:#c8102e"></i></span>
-        </span>
-        <span class="body">
-          <span class="theme">Minimal editorial</span>
-          <h2>Rohit Singh</h2>
-          <p>Delhi club circuit. Placements, gig work, hecklers and the front page.</p>
-          <span class="go">Open site &rarr;</span>
-        </span>
-      </a>
-
-      <a class="card" href="rajat-sood/">
-        <span class="shot">
-          <img src="rajat-sood/images/rajat-sood-district-artist-640.jpg" alt="Rajat Sood" width="640" height="640" loading="lazy">
-          <span class="swatch" aria-hidden="true"><i style="background:#1c0f1b"></i><i style="background:#d9a441"></i><i style="background:#c76b7a"></i></span>
-        </span>
-        <span class="body">
-          <span class="theme">Velvet &amp; gold</span>
-          <h2>Rajat Sood</h2>
-          <p>Winner of India&rsquo;s Laughter Champion. Pomedy &mdash; poetry plus comedy.</p>
-          <span class="go">Open site &rarr;</span>
-        </span>
-      </a>
-
+    <h2>What I build</h2>
+    <div class="what">
+      <div class="item">
+        <span class="tag">Performers</span>
+        <h3>Comedian &amp; artist sites</h3>
+        <p>A home for your specials, tour dates and booking enquiries, with a look built around your act rather than a stock theme.</p>
+      </div>
+      <div class="item">
+        <span class="tag">Local business</span>
+        <h3>Shopfront sites</h3>
+        <p>Studios, clinics, gyms and lounges &mdash; the things people search for, answered on one fast page.</p>
+      </div>
+      <div class="item">
+        <span class="tag">Tools</span>
+        <h3>Calculators &amp; web apps</h3>
+        <p>Small, focused tools that do one job properly and rank for the thing they do.</p>
+      </div>
+      <div class="item">
+        <span class="tag">Care</span>
+        <h3>Upkeep</h3>
+        <p>Dates change, numbers move, shows get added. I keep things current so the site does not quietly go stale.</p>
+      </div>
     </div>
   </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How I work</h2>
+    <ul class="ticks">
+      <li><b>Mobile first, genuinely.</b> Tested at 360px, not just shrunk down. Tap targets sized for thumbs, no sideways scrolling, no pinching.</li>
+      <li><b>Fast by construction.</b> No frameworks, no webfonts, no tracking scripts. Images sized for the screen that asks for them.</li>
+      <li><b>Built to be found.</b> Proper titles, descriptions, structured data and link previews, so sharing a link actually shows something.</li>
+      <li><b>Accessible.</b> Real headings, alt text on every image, keyboard navigable, and animation that backs off if your phone asks it to.</li>
+      <li><b>Yours.</b> Plain files you can host anywhere. No lock-in, no monthly platform fee, no builder account you have to keep paying for.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p class="lede" style="margin:0 0 24px">Tell me what you do and where people should be able to find you. I will come back with what I would build and what it costs.</p>
+    <ul class="contact">
+      <li><a href="mailto:arpitbhushan1@gmail.com?subject=Website%20enquiry"><span class="h">Email</span><span class="v">arpitbhushan1@gmail.com</span></a></li>
+      <li><a href="https://github.com/codificador21" target="_blank" rel="noopener"><span class="h">GitHub</span><span class="v">github.com/codificador21 &rarr;</span></a></li>
+    </ul>
+  </div>
+</section>
 </main>
 
 <footer>
   <div class="wrap">
-    <p>Plain HTML, CSS and JavaScript. No build step, no frameworks, no webfonts, no third-party scripts until you press play on a video.</p>
-    <p class="disc">These are unofficial demo portfolios, built from publicly available sources for design-portfolio purposes. They are not official artist websites and are not affiliated with, authorised by or endorsed by any of the comedians featured. Photographs remain the copyright of their owners; each site&rsquo;s notes.md lists every source.</p>
+    <p>&copy; <span id="yr">2026</span> Arpit Bhushan. Built by hand, like everything else here.</p>
   </div>
 </footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
