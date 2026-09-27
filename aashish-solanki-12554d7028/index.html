@@ -78,14 +78,14 @@ a{color:inherit}
 
 /* hero */
 .hero{position:relative;padding:clamp(44px,7vw,92px) 0 clamp(46px,7vw,90px);overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(ellipse 60% 55% at 12% 0%,rgba(31,95,208,.10),transparent 58%),
              radial-gradient(ellipse 55% 50% at 92% 18%,rgba(255,194,51,.20),transparent 58%)}
 /* faint ruled-paper nod to the teaching years */
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+.hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
   background-image:repeating-linear-gradient(to bottom,transparent 0 37px,var(--line) 37px 38px);
   mask-image:linear-gradient(to bottom,transparent,#000 40%,transparent)}
-.hero .wrap{position:relative;display:grid;gap:clamp(30px,5vw,60px);grid-template-columns:1fr;align-items:center}
+.hero .wrap{position:relative;z-index:1;display:grid;gap:clamp(30px,5vw,60px);grid-template-columns:1fr;align-items:center}
 @media(min-width:920px){.hero .wrap{grid-template-columns:1.1fr .9fr}}
 .badge{display:inline-flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--line);
   box-shadow:var(--sh);border-radius:99px;padding:8px 17px 8px 10px;font-size:13px;font-weight:650;margin:0 0 22px}
