@@ -7,7 +7,7 @@
 <title>Aashish Solanki — Clean Stand-Up Comedy | Comicstaan Season 3 Winner</title>
 <meta name="description" content="Aashish Solanki won Comicstaan Season 3. A school teacher turned stand-up comic from Delhi, he does clean, family-friendly Hindi comedy. Watch his sets, find tour dates and book a show.">
 <meta name="author" content="Aashish Solanki">
-<meta name="theme-color" content="#f6f8fc">
+<meta name="theme-color" content="#1b2a24">
 <link rel="canonical" href="https://codificador21.github.io/comedy/aashish-solanki-12554d7028/">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://codificador21.github.io/comedy/aashish-solanki-12554d7028/">
@@ -22,7 +22,7 @@
 <meta name="twitter:title" content="Aashish Solanki — Clean Stand-Up Comedy">
 <meta name="twitter:description" content="Winner of Comicstaan Season 3. A school teacher turned stand-up comic. Clean, family-friendly comedy.">
 <meta name="twitter:image" content="https://codificador21.github.io/comedy/aashish-solanki-12554d7028/images/aashish-solanki-district-artist.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231f5fd0'/%3E%3Ctext x='16' y='23' font-family='Helvetica,Arial' font-size='17' font-weight='700' fill='%23ffc233' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b2a24'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='18' fill='%23f4f1e8' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -46,184 +46,285 @@
 </script>
 <style>
 :root{
-  --paper:#f6f8fc; --paper-2:#eef2f9; --card:#ffffff;
-  --ink:#16202e; --ink-2:#465468; --ink-3:#7d8899;
-  --blue:#1f5fd0; --blue-dk:#164699; --blue-soft:#e4ecfb;
-  --sun:#ffc233; --mint:#18a67e;
-  --line:#dde4ef;
+  --board:#1b2a24; --board-2:#16231e; --board-3:#22352d;
+  --chalk:#f2efe4; --chalk-dim:#a9b8ae; --chalk-yellow:#ffd45e; --chalk-pink:#ff9aae; --chalk-blue:#8fd3e8;
+  --paper:#fdfaef; --paper-2:#f6f1e0;
+  --ink:#24322b; --ink-2:#55655c; --ink-3:#8b978f;
+  --rule:#bfd4e8; --margin-red:#e0736e; --tape:rgba(226,214,170,.78);
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --hand:"Bradley Hand","Chalkboard SE","Segoe Print","Comic Sans MS",cursive;
   --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
   --pad:clamp(20px,5vw,64px);
-  --sh:0 2px 4px rgba(22,32,46,.04),0 10px 26px rgba(31,95,208,.09);
-  --sh-lift:0 6px 12px rgba(22,32,46,.06),0 20px 44px rgba(31,95,208,.15);
 }
-*{box-sizing:border-box}
+*{box-sizing:border-box;-webkit-tap-highlight-color:rgba(255,212,94,.2)}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.72 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block;height:auto}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-.skip{position:absolute;left:-9999px;background:var(--ink);color:#fff;padding:11px 18px;z-index:100;border-radius:0 0 10px 0}
+:focus-visible{outline:3px solid var(--chalk-yellow);outline-offset:3px}
+.skip{position:absolute;left:-9999px;background:var(--board);color:var(--chalk);padding:11px 18px;z-index:100}
 .skip:focus{left:0;top:0}
-.wrap{max-width:1120px;margin:0 auto;padding-inline:var(--pad)}
+.wrap{max-width:1120px;margin:0 auto;
+  padding-left:calc(var(--pad) + env(safe-area-inset-left,0px));
+  padding-right:calc(var(--pad) + env(safe-area-inset-right,0px))}
 
-/* nav */
-.nav{position:sticky;top:0;z-index:60;background:rgba(246,248,252,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:750;letter-spacing:-.022em;font-size:17px}
-.brand i{width:32px;height:32px;border-radius:10px;background:var(--blue);color:var(--sun);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:15px}
-.nav ul{list-style:none;display:flex;gap:2px;margin:0;padding:0;flex-wrap:wrap;justify-content:flex-end}
-.nav .nl{text-decoration:none;color:var(--ink-2);font-size:13.5px;font-weight:600;padding:9px 12px;border-radius:99px;transition:background .2s,color .2s}
-.nav .nl:hover{background:var(--blue-soft);color:var(--blue-dk)}
+/* ---------- chalkboard + paper surfaces ---------- */
+.board-bg{position:relative;background:var(--board);color:var(--chalk);
+  background-image:
+    radial-gradient(ellipse 70% 50% at 25% 20%,rgba(255,255,255,.045),transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 75%,rgba(255,255,255,.03),transparent 60%)}
+.board-bg::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background-image:radial-gradient(rgba(255,255,255,.05) .5px,transparent .6px);background-size:3px 3px}
+.paper-bg{position:relative;background:var(--paper)}
+/* ruled exercise-book lines */
+.ruled::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.55;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 33px,var(--rule) 33px 34px)}
+.ruled::after{content:"";position:absolute;top:0;bottom:0;z-index:0;pointer-events:none;
+  left:calc(var(--pad) + env(safe-area-inset-left,0px) - 14px);width:2px;background:var(--margin-red);opacity:.42}
+.ruled > .wrap{position:relative;z-index:1}
 
-/* hero */
-.hero{position:relative;padding:clamp(44px,7vw,92px) 0 clamp(46px,7vw,90px);overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:radial-gradient(ellipse 60% 55% at 12% 0%,rgba(31,95,208,.10),transparent 58%),
-             radial-gradient(ellipse 55% 50% at 92% 18%,rgba(255,194,51,.20),transparent 58%)}
-/* faint ruled-paper nod to the teaching years */
-.hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5;
-  background-image:repeating-linear-gradient(to bottom,transparent 0 37px,var(--line) 37px 38px);
-  mask-image:linear-gradient(to bottom,transparent,#000 40%,transparent)}
-.hero .wrap{position:relative;z-index:1;display:grid;gap:clamp(30px,5vw,60px);grid-template-columns:1fr;align-items:center}
-@media(min-width:920px){.hero .wrap{grid-template-columns:1.1fr .9fr}}
-.badge{display:inline-flex;align-items:center;gap:9px;background:var(--card);border:1px solid var(--line);
-  box-shadow:var(--sh);border-radius:99px;padding:8px 17px 8px 10px;font-size:13px;font-weight:650;margin:0 0 22px}
-.badge b{display:inline-grid;place-items:center;width:23px;height:23px;border-radius:50%;background:var(--sun);font-size:12px}
-h1{margin:0;font-size:clamp(2.7rem,10vw,5.4rem);line-height:.98;letter-spacing:-.045em;font-weight:800}
-h1 .ln{display:block;overflow:hidden}
-h1 .ln>span{display:block;transform:translateY(105%);animation:up .85s cubic-bezier(.18,1,.24,1) forwards}
-h1 .ln:nth-child(2)>span{animation-delay:.1s;color:var(--blue)}
-@keyframes up{to{transform:translateY(0)}}
-.lede{margin:24px 0 0;max-width:52ch;font-size:clamp(1.02rem,2.3vw,1.18rem);color:var(--ink-2);opacity:0;animation:fi .6s .58s forwards}
-@keyframes fi{to{opacity:1}}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;opacity:0;animation:fi .6s .74s forwards}
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:70;background:rgba(22,35,30,.95);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(242,239,228,.16);color:var(--chalk)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:var(--hand);font-size:20px;letter-spacing:.01em}
+.brand .star{width:26px;height:26px;flex:none}
+.nav ul{list-style:none;display:flex;gap:3px;margin:0;padding:0;flex-wrap:wrap;justify-content:flex-end}
+.nav .nl{position:relative;text-decoration:none;color:var(--chalk-dim);font-size:13px;font-weight:600;
+  letter-spacing:.04em;padding:9px 11px;display:inline-block;transition:color .2s}
+.nav .nl::after{content:"";position:absolute;left:11px;right:11px;bottom:5px;height:2px;border-radius:2px;
+  background:var(--chalk-yellow);transform:scaleX(0);transform-origin:left;transition:transform .28s cubic-bezier(.2,1,.25,1)}
+.nav .nl:hover{color:var(--chalk)}
+.nav .nl:hover::after{transform:scaleX(1)}
+
+/* ---------- hero: the board ---------- */
+.hero{padding:clamp(46px,7vw,96px) 0 clamp(50px,7vw,96px);overflow:hidden}
+.hero .wrap{display:grid;gap:clamp(34px,5vw,60px);grid-template-columns:1fr;align-items:center}
+@media(min-width:940px){.hero .wrap{grid-template-columns:1.08fr .92fr}}
+.sticker{display:inline-flex;align-items:center;gap:10px;background:var(--chalk-yellow);color:#2a2109;
+  font-weight:800;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 18px 9px 11px;
+  border-radius:99px;margin:0 0 24px;transform:rotate(-2.2deg);box-shadow:0 6px 18px rgba(0,0,0,.28)}
+.sticker svg{width:20px;height:20px;flex:none;animation:starspin 9s linear infinite}
+@keyframes starspin{to{transform:rotate(360deg)}}
+h1{margin:0;font-size:clamp(2.9rem,11vw,6rem);line-height:.96;letter-spacing:-.03em;font-weight:800;color:var(--chalk)}
+h1 .ln{display:block}
+h1 .ch{display:inline-block;opacity:0;filter:blur(7px);transform:translateY(16px) rotate(-5deg);
+  animation:chalkin .62s cubic-bezier(.2,1,.25,1) forwards}
+@keyframes chalkin{to{opacity:1;filter:blur(0);transform:none}}
+.underline{display:block;width:min(360px,80%);height:20px;margin-top:6px;overflow:visible}
+.underline path{fill:none;stroke:var(--chalk-yellow);stroke-width:5;stroke-linecap:round;
+  stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1s .85s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.lede{margin:26px 0 0;max-width:50ch;font-size:clamp(1.02rem,2.3vw,1.18rem);color:var(--chalk-dim);
+  opacity:0;animation:fadein .6s 1.05s forwards}
+.lede b{color:var(--chalk);font-weight:600}
+@keyframes fadein{to{opacity:1}}
+.cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:32px;opacity:0;animation:fadein .6s 1.2s forwards}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;text-decoration:none;
-  font-size:14.5px;font-weight:700;padding:13px 25px;border-radius:14px;cursor:pointer;border:1px solid var(--line);
-  background:var(--card);color:var(--ink);box-shadow:var(--sh);
-  transition:transform .2s,box-shadow .2s,background .2s,color .2s,border-color .2s}
-.btn:hover{transform:translateY(-3px);box-shadow:var(--sh-lift)}
-.btn.blue{background:var(--blue);border-color:var(--blue);color:#fff}
-.btn.sun{background:var(--sun);border-color:var(--sun);color:var(--ink)}
-.portrait{position:relative;max-width:410px;margin-inline:auto;width:100%}
-.portrait .ph{border-radius:28px;overflow:hidden;background:var(--card);border:1px solid var(--line);box-shadow:var(--sh-lift)}
-.portrait img{width:100%;aspect-ratio:1;object-fit:cover;object-position:center 18%}
-.portrait .chip{position:absolute;left:-10px;bottom:22px;background:var(--card);border:1px solid var(--line);
-  box-shadow:var(--sh);border-radius:14px;padding:11px 16px;font-size:12.5px;font-weight:700;line-height:1.35}
-.portrait .chip span{display:block;font-weight:500;color:var(--ink-3);font-size:11.5px}
-.portrait figcaption{margin-top:15px;text-align:center;font-size:12px;color:var(--ink-3)}
+  font-size:14.5px;font-weight:700;padding:13px 26px;border-radius:30px 26px 30px 24px;cursor:pointer;
+  border:2px solid var(--chalk);background:transparent;color:var(--chalk);
+  transition:transform .22s cubic-bezier(.2,1,.25,1),background .22s,color .22s,box-shadow .22s}
+.btn:hover{transform:translateY(-3px) rotate(-1deg);background:var(--chalk);color:var(--board);box-shadow:0 10px 22px rgba(0,0,0,.3)}
+.btn.chalk-y{border-color:var(--chalk-yellow);background:var(--chalk-yellow);color:#2a2109}
+.btn.chalk-y:hover{background:transparent;color:var(--chalk-yellow)}
+.btn.ink{border-color:var(--ink);color:var(--ink)}
+.btn.ink:hover{background:var(--ink);color:var(--paper)}
 
-/* sections */
-section{padding:clamp(52px,8vw,102px) 0;border-top:1px solid var(--line)}
-.band{background:var(--paper-2)}
-.sh{margin:0 0 38px;max-width:60ch}
-.sh .tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--blue);background:var(--blue-soft);padding:5px 12px;border-radius:99px;margin-bottom:14px}
-h2{margin:0;font-size:clamp(1.85rem,5.2vw,2.9rem);line-height:1.06;letter-spacing:-.04em;font-weight:800}
-h2+p{margin:14px 0 0;color:var(--ink-2)}
-[data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.18,1,.24,1),transform .7s cubic-bezier(.18,1,.24,1)}
+/* pinned photo */
+.pinned{position:relative;width:min(400px,100%);margin-inline:auto;transform:rotate(-2deg);
+  opacity:0;animation:dropin .8s .5s cubic-bezier(.2,1,.25,1) forwards}
+@keyframes dropin{from{opacity:0;transform:rotate(-7deg) translateY(-26px) scale(.95)}to{opacity:1;transform:rotate(-2deg)}}
+.pinned .frame{background:var(--paper);padding:13px 13px 52px;box-shadow:0 18px 40px rgba(0,0,0,.42);
+  transition:transform .35s cubic-bezier(.2,1,.25,1)}
+.pinned:hover .frame{transform:rotate(1.6deg) scale(1.015)}
+.pinned img{width:100%;aspect-ratio:1;object-fit:cover;object-position:center 16%}
+.pinned .cap{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-family:var(--hand);
+  font-size:17px;color:var(--ink-2)}
+.tape{position:absolute;width:104px;height:30px;background:var(--tape);
+  box-shadow:0 1px 3px rgba(0,0,0,.18);backdrop-filter:blur(1px)}
+.tape.tl{top:-13px;left:-16px;transform:rotate(-27deg)}
+.tape.br{bottom:26px;right:-18px;transform:rotate(-24deg)}
+
+/* floating chalk dust */
+.dust{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.dust i{position:absolute;width:5px;height:5px;border-radius:50%;background:rgba(242,239,228,.5);
+  animation:float 15s linear infinite}
+@keyframes float{0%{transform:translate3d(0,20px,0) scale(.6);opacity:0}
+ 12%{opacity:.75}88%{opacity:.5}100%{transform:translate3d(24px,-150px,0) scale(1.15);opacity:0}}
+
+/* ---------- chalk ticker ---------- */
+.ticker{background:var(--board-2);color:var(--chalk-dim);border-top:1px solid rgba(242,239,228,.14);
+  border-bottom:1px solid rgba(242,239,228,.14);overflow:hidden;padding:13px 0}
+.ticker-track{display:flex;gap:0;width:max-content;animation:slide 34s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker span{font-family:var(--hand);font-size:17px;padding:0 26px;white-space:nowrap;opacity:.85}
+.ticker span::after{content:"\2726";margin-left:26px;color:var(--chalk-yellow)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{padding:clamp(56px,8vw,106px) 0;position:relative}
+.sh{margin:0 0 40px;max-width:58ch;position:relative}
+.sh .tag{display:inline-block;font-family:var(--hand);font-size:17px;color:var(--margin-red);margin-bottom:6px;transform:rotate(-1.5deg)}
+.board-bg .sh .tag{color:var(--chalk-yellow)}
+h2{margin:0;font-size:clamp(1.95rem,5.4vw,3.1rem);line-height:1.04;letter-spacing:-.035em;font-weight:800}
+.board-bg h2{color:var(--chalk)}
+.sh p{margin:14px 0 0;color:var(--ink-2)}
+.board-bg .sh p{color:var(--chalk-dim)}
+/* highlighter sweep */
+.hl{background-image:linear-gradient(var(--chalk-yellow),var(--chalk-yellow));background-repeat:no-repeat;
+  background-position:0 88%;background-size:0 38%;padding:0 3px;
+  transition:background-size .75s cubic-bezier(.2,1,.25,1) .25s}
+.is-in .hl,.hl.is-in{background-size:100% 38%}
+/* reveal: paper being laid down */
+[data-reveal]{opacity:0;transform:translateY(26px) rotate(var(--rot,0deg));
+  transition:opacity .72s cubic-bezier(.2,1,.25,1),transform .72s cubic-bezier(.2,1,.25,1)}
 [data-reveal].is-in{opacity:1;transform:none}
 
-.two{display:grid;gap:clamp(24px,4vw,50px);grid-template-columns:1fr}
-@media(min-width:860px){.two{grid-template-columns:1.15fr .85fr}}
-.two p{margin:0 0 18px;max-width:62ch;color:var(--ink-2)}
+/* ---------- about ---------- */
+.two{display:grid;gap:clamp(26px,4vw,52px);grid-template-columns:1fr}
+@media(min-width:880px){.two{grid-template-columns:1.12fr .88fr}}
+.two p{margin:0 0 19px;max-width:60ch;color:var(--ink-2)}
 .two strong{color:var(--ink);font-weight:700}
-.quote{margin:26px 0 0;padding:22px 24px;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--sun);
-  border-radius:16px;box-shadow:var(--sh);font-size:1.04rem;line-height:1.6}
-.quote cite{display:block;margin-top:10px;font-style:normal;font-size:12.5px;color:var(--ink-3);font-weight:600}
-.facts{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--sh);padding:8px 22px}
-.facts dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0}
-.facts dt,.facts dd{padding:13px 0;border-bottom:1px solid var(--line)}
-.facts dl>:nth-last-child(1),.facts dl>:nth-last-child(2){border-bottom:0}
-.facts dt{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
-.facts dd{margin:0;text-align:right;font-weight:650;font-size:14.5px}
+.margin-note{font-family:var(--hand);font-size:18px;color:var(--margin-red);line-height:1.5;
+  border-left:3px solid var(--margin-red);padding:4px 0 4px 16px;margin:26px 0;transform:rotate(-.6deg);max-width:34ch}
+.quote{margin:28px 0 0;padding:26px 28px;background:var(--paper-2);border-radius:4px;
+  box-shadow:3px 3px 0 rgba(36,50,43,.1);font-size:1.06rem;line-height:1.62;position:relative;transform:rotate(-.5deg)}
+.quote::before{content:"\201C";position:absolute;top:-6px;left:12px;font:700 62px/1 Georgia,serif;color:var(--chalk-yellow)}
+.quote cite{display:block;margin-top:12px;font-style:normal;font-size:12.5px;color:var(--ink-3);font-weight:700;letter-spacing:.04em}
+/* the identity card */
+.idcard{background:var(--paper);border:2px solid var(--ink);border-radius:5px;padding:22px 24px;
+  box-shadow:6px 6px 0 rgba(36,50,43,.14);transform:rotate(.7deg);transition:transform .3s cubic-bezier(.2,1,.25,1)}
+.idcard:hover{transform:rotate(0) translateY(-4px)}
+.idcard h3{margin:0 0 4px;font-family:var(--hand);font-size:22px;letter-spacing:.01em}
+.idcard .sub{margin:0 0 16px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+.idcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:0}
+.idcard dt,.idcard dd{padding:11px 0;border-bottom:1px dashed rgba(36,50,43,.22)}
+.idcard dl>:nth-last-child(1),.idcard dl>:nth-last-child(2){border-bottom:0}
+.idcard dt{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-3);font-weight:800}
+.idcard dd{margin:0;text-align:right;font-family:var(--hand);font-size:17px;color:var(--ink)}
 
-/* stats - report card */
-.stats{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:840px){.stats{grid-template-columns:repeat(4,1fr)}}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 20px;box-shadow:var(--sh);
-  transition:transform .22s,box-shadow .22s}
-.stat:hover{transform:translateY(-4px);box-shadow:var(--sh-lift)}
-.stat .num{font-size:clamp(2.1rem,5.8vw,3rem);font-weight:800;line-height:1;letter-spacing:-.045em;color:var(--blue)}
-.stat:nth-child(2) .num{color:var(--mint)}
-.stat:nth-child(4) .num{color:var(--ink)}
-.stat .lbl{margin-top:11px;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+/* ---------- report card ---------- */
+.report{background:var(--paper);border:2px solid var(--ink);border-radius:5px;overflow:hidden;
+  box-shadow:8px 8px 0 rgba(36,50,43,.15);max-width:860px;margin-inline:auto}
+.report .top{background:var(--ink);color:var(--paper);padding:15px 22px;display:flex;justify-content:space-between;
+  align-items:center;gap:14px;flex-wrap:wrap}
+.report .top b{font-family:var(--hand);font-size:20px;font-weight:400;letter-spacing:.03em}
+.report .top span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.75}
+.rows{display:grid;grid-template-columns:1fr}
+.rrow{display:grid;grid-template-columns:1fr auto;gap:12px 20px;align-items:center;padding:18px 22px;
+  border-bottom:1px dashed rgba(36,50,43,.2);transition:background .25s}
+.rrow:last-child{border-bottom:0}
+.rrow:hover{background:var(--paper-2)}
+.rrow .subject{font-weight:700;font-size:14.5px;letter-spacing:.01em}
+.rrow .subject em{display:block;font-style:normal;font-size:11.5px;color:var(--ink-3);font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-top:2px}
+.rrow .num{font-family:var(--hand);font-size:clamp(1.9rem,5.6vw,2.5rem);line-height:1;color:var(--margin-red)}
+.rrow.stamped .num{animation:stamp .45s cubic-bezier(.3,1.5,.5,1)}
+@keyframes stamp{0%{transform:scale(1)}40%{transform:scale(1.14) rotate(-2deg)}100%{transform:scale(1)}}
 
-/* videos */
-.grid{display:grid;gap:22px;grid-template-columns:1fr;align-items:stretch}
+/* ---------- video cards: taped exercise books ---------- */
+.grid{display:grid;gap:26px;grid-template-columns:1fr;align-items:stretch}
 @media(min-width:620px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.grid.three{grid-template-columns:repeat(3,1fr)}}
-.vid{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:20px;
-  overflow:hidden;box-shadow:var(--sh);transition:transform .22s,box-shadow .22s}
-.vid:hover{transform:translateY(-4px);box-shadow:var(--sh-lift)}
+.vid{position:relative;display:flex;flex-direction:column;background:var(--paper);padding:11px 11px 0;
+  box-shadow:0 3px 0 rgba(36,50,43,.16),0 14px 30px rgba(36,50,43,.12);
+  transition:transform .32s cubic-bezier(.2,1,.25,1),box-shadow .32s}
+.vid:nth-child(3n+1){transform:rotate(-.7deg)}
+.vid:nth-child(3n+3){transform:rotate(.7deg)}
+.vid:hover{transform:rotate(0) translateY(-7px);box-shadow:0 3px 0 rgba(36,50,43,.16),0 24px 44px rgba(36,50,43,.2)}
+.vid .tape{width:88px;height:26px;top:-12px;left:50%;margin-left:-44px;transform:rotate(-2deg)}
 .yt{display:block;width:100%;border:0;padding:0;background:#000;position:relative;aspect-ratio:16/9;cursor:pointer;overflow:hidden}
-.yt img{width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.18,1,.24,1)}
-.yt:hover img{transform:scale(1.055)}
-.yt .play{position:absolute;inset:0;margin:auto;width:64px;height:64px;border-radius:50%;background:#fff;
-  display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3);transition:transform .22s}
-.yt:hover .play{transform:scale(1.09)}
-.yt .play::after{content:"";border-left:16px solid var(--blue);border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px}
-.vid .meta{padding:17px 19px 19px;flex:1}
-.vid h3{margin:0 0 5px;font-size:1.05rem;line-height:1.32;letter-spacing:-.018em}
-.vid p{margin:0;font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--ink-3);text-transform:uppercase}
+.yt img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,1,.25,1)}
+.yt:hover img{transform:scale(1.06)}
+.yt .play{position:absolute;inset:0;margin:auto;width:68px;height:68px;border-radius:50%;
+  background:rgba(27,42,36,.72);border:2px solid var(--chalk);display:grid;place-items:center;
+  transition:transform .26s cubic-bezier(.2,1,.25,1),background .26s}
+.yt:hover .play{transform:scale(1.1) rotate(6deg);background:var(--chalk-yellow);border-color:var(--chalk-yellow)}
+.yt .play::after{content:"";border-left:17px solid var(--chalk);border-top:11px solid transparent;border-bottom:11px solid transparent;margin-left:5px;transition:border-left-color .26s}
+.yt:hover .play::after{border-left-color:#2a2109}
+.vid .meta{padding:16px 10px 20px;flex:1}
+.vid h3{margin:0 0 5px;font-size:1.06rem;line-height:1.32;letter-spacing:-.015em}
+.vid p{margin:0;font-family:var(--hand);font-size:16px;color:var(--ink-3)}
 .vid iframe{width:100%;aspect-ratio:16/9;border:0;display:block}
 
-/* shows */
-.shows{list-style:none;margin:0;padding:0;display:grid;gap:15px}
-.shows li{display:grid;gap:10px 22px;grid-template-columns:1fr;align-items:center;background:var(--card);
-  border:1px solid var(--line);border-radius:20px;padding:22px 24px;box-shadow:var(--sh)}
-@media(min-width:780px){.shows li{grid-template-columns:1fr auto}}
-.shows h3{margin:0 0 4px;font-size:1.1rem;letter-spacing:-.02em}
-.shows .where{font-size:14px;color:var(--ink-3)}
-.note{font-size:14px;color:var(--ink-3);max-width:66ch}
+/* ---------- attendance register ---------- */
+.register{max-width:900px;margin-inline:auto;background:rgba(242,239,228,.05);
+  border:1px solid rgba(242,239,228,.2);border-radius:4px;overflow:hidden}
+.reg-head{display:grid;grid-template-columns:38px 1fr auto;gap:16px;padding:13px 20px;
+  background:rgba(242,239,228,.09);font-size:10.5px;letter-spacing:.19em;text-transform:uppercase;color:var(--chalk-dim);font-weight:700}
+.reg-row{display:grid;grid-template-columns:38px 1fr auto;gap:12px 16px;align-items:center;padding:20px;
+  border-top:1px solid rgba(242,239,228,.13);transition:background .25s}
+.reg-row:hover{background:rgba(242,239,228,.05)}
+.tick{width:26px;height:26px;flex:none}
+.tick path{fill:none;stroke:var(--chalk-yellow);stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:36;stroke-dashoffset:36;transition:stroke-dashoffset .5s cubic-bezier(.4,0,.2,1)}
+.is-in .tick path{stroke-dashoffset:0}
+.reg-row:nth-child(3) .tick path{transition-delay:.12s}
+.reg-row:nth-child(4) .tick path{transition-delay:.24s}
+.reg-row h3{margin:0 0 3px;font-size:1.06rem;color:var(--chalk);letter-spacing:-.015em}
+.reg-row .where{font-size:13.5px;color:var(--chalk-dim)}
+@media(max-width:700px){
+  .reg-head{display:none}
+  .reg-row{grid-template-columns:30px 1fr;gap:10px 12px}
+  .reg-row .btn{grid-column:1/-1;justify-self:start}
+}
 
-.cards{display:grid;gap:18px;grid-template-columns:1fr}
-@media(min-width:760px){.cards{grid-template-columns:repeat(2,1fr)}}
-.ccard{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--sh);
-  transition:transform .22s,box-shadow .22s}
-.ccard:hover{transform:translateY(-3px);box-shadow:var(--sh-lift)}
-.ccard .tag{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;
-  color:var(--mint);background:#e2f6f0;padding:4px 11px;border-radius:99px;margin-bottom:11px}
-.ccard h3{margin:0 0 8px;font-size:1.16rem;letter-spacing:-.025em}
-.ccard p{margin:0;font-size:14.5px;color:var(--ink-2)}
+/* ---------- sticky notes ---------- */
+.notes{display:grid;gap:22px;grid-template-columns:1fr}
+@media(min-width:700px){.notes{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.notes{grid-template-columns:repeat(4,1fr)}}
+.note-card{padding:24px 22px 28px;box-shadow:0 10px 24px rgba(36,50,43,.18);
+  transition:transform .32s cubic-bezier(.2,1,.25,1),box-shadow .32s;min-height:200px}
+.note-card:nth-child(1){background:#fff2a8;transform:rotate(-1.8deg)}
+.note-card:nth-child(2){background:#bfe9d0;transform:rotate(1.4deg)}
+.note-card:nth-child(3){background:#ffd2d7;transform:rotate(-1.1deg)}
+.note-card:nth-child(4){background:#c9e3f7;transform:rotate(1.9deg)}
+.note-card:hover{transform:rotate(0) translateY(-8px) scale(1.02);box-shadow:0 20px 38px rgba(36,50,43,.26)}
+.note-card .tag{font-family:var(--hand);font-size:15px;color:rgba(36,50,43,.62);display:block;margin-bottom:9px}
+.note-card h3{margin:0 0 9px;font-size:1.1rem;letter-spacing:-.02em}
+.note-card p{margin:0;font-size:14px;color:rgba(36,50,43,.82);line-height:1.6}
 
-.gal{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:840px){.gal{grid-template-columns:repeat(3,1fr)}}
-.gal figure{margin:0;position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh);
-  transition:transform .22s,box-shadow .22s}
-.gal figure:hover{transform:translateY(-4px);box-shadow:var(--sh-lift)}
-.gal img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 26%;transition:transform .55s cubic-bezier(.18,1,.24,1)}
-.gal figure:hover img{transform:scale(1.05)}
-.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 11px;color:#fff;font-size:12px;font-weight:650;
-  background:linear-gradient(to top,rgba(10,16,26,.88) 18%,rgba(10,16,26,0))}
+/* ---------- gallery: photos on the board ---------- */
+.gal{display:grid;gap:26px 22px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:860px){.gal{grid-template-columns:repeat(3,1fr)}}
+.gal figure{position:relative;margin:0;background:var(--paper);padding:10px 10px 38px;
+  box-shadow:0 14px 30px rgba(0,0,0,.36);transition:transform .34s cubic-bezier(.2,1,.25,1),box-shadow .34s}
+.gal figure:nth-child(odd){transform:rotate(-1.6deg)}
+.gal figure:nth-child(even){transform:rotate(1.5deg)}
+.gal figure:hover{transform:rotate(0) translateY(-8px) scale(1.03);box-shadow:0 26px 50px rgba(0,0,0,.48);z-index:2}
+.gal img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 26%}
+.gal figcaption{position:absolute;left:10px;right:10px;bottom:11px;text-align:center;
+  font-family:var(--hand);font-size:15.5px;color:var(--ink-2)}
+.gal .tape{width:76px;height:24px;top:-11px;left:50%;margin-left:-38px;transform:rotate(-3deg)}
 
-/* contact */
-.contact{display:grid;gap:clamp(26px,4vw,50px);grid-template-columns:1fr}
+/* ---------- booking ---------- */
+.contact{display:grid;gap:clamp(28px,4vw,52px);grid-template-columns:1fr}
 @media(min-width:880px){.contact{grid-template-columns:1.05fr .95fr}}
-form{display:grid;gap:16px}
-label{display:grid;gap:7px;font-size:11.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
-input,select,textarea{font:16px/1.5 var(--sans);color:var(--ink);background:var(--card);border:1px solid var(--line);
-  border-radius:13px;padding:13px 15px;width:100%;box-shadow:0 1px 2px rgba(22,32,46,.04)}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px var(--blue-soft)}
-textarea{min-height:124px;resize:vertical}
-.row{display:grid;gap:16px;grid-template-columns:1fr}
+form{display:grid;gap:18px}
+label{display:grid;gap:7px;font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+input,select,textarea{font:16px/1.5 var(--sans);color:var(--ink);background:transparent;
+  border:0;border-bottom:2px solid rgba(36,50,43,.28);padding:11px 3px;width:100%;border-radius:0;transition:border-color .22s}
+select{font-family:var(--sans)}
+input:focus,select:focus,textarea:focus{outline:none;border-bottom-color:var(--margin-red)}
+textarea{min-height:120px;resize:vertical;border:2px solid rgba(36,50,43,.28);border-radius:4px;padding:13px}
+.row{display:grid;gap:18px;grid-template-columns:1fr}
 @media(min-width:560px){.row{grid-template-columns:1fr 1fr}}
-.socials{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.socials a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:58px;background:var(--card);
-  border:1px solid var(--line);border-radius:16px;padding:15px 22px;text-decoration:none;font-weight:650;font-size:14.5px;
-  box-shadow:var(--sh);transition:transform .2s,box-shadow .2s,border-color .2s}
-.socials a:hover{transform:translateY(-3px);box-shadow:var(--sh-lift);border-color:var(--blue)}
-.socials .h{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3);font-weight:800}
-.socials .v{text-align:right;overflow-wrap:anywhere}
+.socials{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.socials a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:58px;
+  background:var(--paper);border:2px solid var(--ink);border-radius:4px;padding:15px 20px;text-decoration:none;
+  font-weight:650;font-size:14.5px;box-shadow:4px 4px 0 rgba(36,50,43,.14);
+  transition:transform .22s cubic-bezier(.2,1,.25,1),box-shadow .22s,background .22s}
+.socials a:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--chalk-yellow);background:var(--paper-2)}
+.socials .h{font-size:10.5px;letter-spacing:.17em;text-transform:uppercase;color:var(--ink-3);font-weight:800}
+.socials .v{text-align:right;overflow-wrap:anywhere;font-family:var(--hand);font-size:16px}
+.note{font-size:14px;color:var(--ink-3);max-width:64ch}
+.board-bg .note{color:var(--chalk-dim)}
 
-footer{border-top:1px solid var(--line);padding:38px 0 calc(52px + env(safe-area-inset-bottom,0px));font-size:13px;color:var(--ink-3)}
-footer .disc{font-size:11.5px;line-height:1.75;border:1px dashed var(--line);border-radius:14px;padding:15px 17px;margin-top:13px;background:var(--card)}
+footer{background:var(--board-2);color:var(--chalk-dim);
+  padding:40px 0 calc(54px + env(safe-area-inset-bottom,0px));font-size:13px;border-top:1px solid rgba(242,239,228,.14)}
+footer .disc{font-size:11.5px;line-height:1.78;border:1px dashed rgba(242,239,228,.24);border-radius:4px;padding:15px 17px;margin-top:14px}
 
-/* ================= mobile pass ================= */
-*{-webkit-tap-highlight-color:rgba(31,95,208,.14)}
+/* ================= mobile ================= */
 section[id],div[id]{scroll-margin-top:84px}
-.wrap{padding-left:calc(var(--pad) + env(safe-area-inset-left,0px));
-      padding-right:calc(var(--pad) + env(safe-area-inset-right,0px))}
 @media (max-width:900px){
   .nav .wrap{flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:0;min-height:0;padding-top:9px;padding-bottom:0}
   .nav nav{min-width:0;max-width:100%}
@@ -233,25 +334,35 @@ section[id],div[id]{scroll-margin-top:84px}
   .nav ul::-webkit-scrollbar{display:none}
   .nav li{flex:0 0 auto}
   .nav .nl{padding-top:13px;padding-bottom:13px;display:block}
+  .nav .nl::after{bottom:8px}
 }
 @media (max-width:640px){
   section[id],div[id]{scroll-margin-top:104px}
-  h1{font-size:clamp(2.6rem,13vw,4.1rem)}
-  .portrait{max-width:330px}
-  .portrait .chip{left:0;bottom:14px}
-  .stat{padding:22px 16px}
-  .facts dd{font-size:13.5px}
+  h1{font-size:clamp(2.7rem,14vw,4.2rem)}
+  .pinned{max-width:320px}
+  .tape.tl{left:-8px}.tape.br{right:-8px}
+  .rrow{padding:16px 17px}
+  .report .top{padding:13px 17px}
+  .note-card{min-height:0}
+  .gal{gap:20px 14px}
   .socials a{min-height:56px}
   button,input,select,textarea{min-height:48px}
-  textarea{min-height:124px}
-  .gal{gap:12px}
-  .socials .v,.facts dd{overflow-wrap:anywhere}
+  textarea{min-height:120px}
+  .idcard dd,.socials .v{overflow-wrap:anywhere}
+  .ruled::after{left:calc(var(--pad) + env(safe-area-inset-left,0px) - 9px)}
 }
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.001ms!important;animation-delay:0ms!important;transition-duration:.001ms!important}
-  h1 .ln>span{transform:none}.lede,.cta{opacity:1}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    animation-delay:0ms!important;transition-duration:.001ms!important}
+  h1 .ch{opacity:1;filter:none;transform:none}
+  .underline path{stroke-dashoffset:0}
+  .lede,.cta,.pinned{opacity:1}
+  .dust{display:none}
+  .ticker-track{animation:none}
   [data-reveal]{opacity:1;transform:none}
+  .hl{background-size:100% 38%}
+  .tick path{stroke-dashoffset:0}
 }
 </style>
 </head>
@@ -260,11 +371,14 @@ section[id],div[id]{scroll-margin-top:84px}
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top"><i>A</i>Aashish Solanki</a>
+    <a class="brand" href="#top">
+      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5z" fill="#ffd45e"/></svg>
+      Aashish Solanki
+    </a>
     <nav aria-label="Primary">
       <ul>
         <li><a class="nl" href="#about">About</a></li>
-        <li><a class="nl" href="#numbers">Numbers</a></li>
+        <li><a class="nl" href="#numbers">Report card</a></li>
         <li><a class="nl" href="#watch">Watch</a></li>
         <li><a class="nl" href="#tour">Tour</a></li>
         <li><a class="nl" href="#screen">Screen</a></li>
@@ -276,187 +390,204 @@ section[id],div[id]{scroll-margin-top:84px}
 </header>
 
 <main id="main">
-<section class="hero" id="top">
+<section class="hero board-bg" id="top">
+  <div class="dust" aria-hidden="true">
+    <i style="left:8%;animation-delay:0s"></i><i style="left:23%;animation-delay:3.4s"></i>
+    <i style="left:38%;animation-delay:7s"></i><i style="left:54%;animation-delay:1.8s"></i>
+    <i style="left:71%;animation-delay:9.6s"></i><i style="left:86%;animation-delay:5.2s"></i>
+    <i style="left:94%;animation-delay:12s"></i>
+  </div>
   <div class="wrap">
     <div>
-      <p class="badge"><b>&#9733;</b> Winner &middot; Comicstaan Season 3</p>
-      <h1>
-        <span class="ln"><span>Aashish</span></span>
-        <span class="ln"><span>Solanki</span></span>
+      <p class="sticker">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5z" fill="#2a2109"/></svg>
+        Winner &middot; Comicstaan Season 3
+      </p>
+      <h1 id="heroName">
+        <span class="ln" data-split>Aashish</span>
+        <span class="ln" data-split>Solanki</span>
       </h1>
-      <p class="lede">A school teacher who quit to tell jokes, and kept the classroom rule about language. Clean, family-friendly Hindi comedy about his mother, his sister&rsquo;s wedding and the middle-class madness in between &mdash; the kind of show you can actually bring your parents to.</p>
+      <svg class="underline" viewBox="0 0 400 20" aria-hidden="true">
+        <path d="M6 13 C 80 4, 150 18, 214 9 S 330 4, 394 12"/>
+      </svg>
+      <p class="lede">He taught in a school, then quit to tell jokes &mdash; and kept the classroom rule about language. <b>Clean, family-friendly Hindi comedy</b> about his mother, his sister&rsquo;s wedding and the middle-class madness in between. The kind of show you can actually bring your parents to.</p>
       <div class="cta">
-        <a class="btn blue" href="#tour">Tour dates</a>
-        <a class="btn sun" href="#watch">Watch a set</a>
+        <a class="btn chalk-y" href="#tour">Tour dates</a>
+        <a class="btn" href="#watch">Watch a set</a>
         <a class="btn" href="#booking">Book a show</a>
       </div>
     </div>
-    <figure class="portrait">
-      <div class="ph"><img src="images/aashish-solanki-district-artist.jpg" alt="Portrait of stand-up comedian Aashish Solanki" width="1800" height="1800" fetchpriority="high" srcset="images/aashish-solanki-district-artist-640.jpg 640w, images/aashish-solanki-district-artist-960.jpg 960w, images/aashish-solanki-district-artist.jpg 1800w" sizes="(max-width:919px) 78vw, 400px"></div>
-      <span class="chip">Clean comedy<span>His own words, and his USP</span></span>
-      <figcaption>Artist portrait &mdash; District</figcaption>
+    <figure class="pinned">
+      <span class="tape tl" aria-hidden="true"></span>
+      <span class="tape br" aria-hidden="true"></span>
+      <div class="frame">
+        <img src="images/aashish-solanki-district-artist.jpg" alt="Portrait of stand-up comedian Aashish Solanki" width="1800" height="1800" fetchpriority="high" srcset="images/aashish-solanki-district-artist-640.jpg 640w, images/aashish-solanki-district-artist-960.jpg 960w, images/aashish-solanki-district-artist.jpg 1800w" sizes="(max-width:939px) 74vw, 400px">
+        <figcaption class="cap">Clean comedy &mdash; his words, his USP</figcaption>
+      </div>
     </figure>
   </div>
 </section>
 
-<section id="about" class="band">
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Behen Ki Shaadi</span><span>Mera Teaching Career</span><span>Pyaari Maa</span><span>Papa In Police</span><span>Jiju Aur Jeevansathi</span><span>Good Boy, Better Show</span>
+    <span>Behen Ki Shaadi</span><span>Mera Teaching Career</span><span>Pyaari Maa</span><span>Papa In Police</span><span>Jiju Aur Jeevansathi</span><span>Good Boy, Better Show</span>
+  </div>
+</div>
+
+<section id="about" class="paper-bg ruled">
   <div class="wrap">
-    <div class="sh"><span class="tag">About</span><h2>From the staff room to the spotlight</h2></div>
+    <div class="sh" data-reveal><span class="tag">Chapter one</span><h2>From the staff room to the spotlight</h2></div>
     <div class="two">
-      <div data-reveal>
+      <div data-reveal style="--rot:-.4deg">
         <p>Aashish Solanki &mdash; also written Ashish Solanki &mdash; is a stand-up comedian from <strong>Delhi</strong>. In 2022 he won <strong>Comicstaan Season 3</strong> on Amazon Prime Video, finishing ahead of Gurleen Pannu and Aman Jotwani.</p>
         <p>Before that he taught in a school. His second YouTube set, <em>Mera Teaching Career</em>, is about exactly that &mdash; being a teacher and why he left &mdash; and it has been watched more than fourteen million times. The first one, <em>Behen Ki Shaadi</em>, was his debut upload after winning Comicstaan and has passed eighteen million.</p>
-        <p>The material is anecdotal and domestic: his mother&rsquo;s disciplinary methods, a brother-in-law, a wedding envelope that reached the wrong house. What sets it apart is what is missing from it. He describes his own work as <strong>clean comedy</strong>, and treats that as the point rather than a limitation.</p>
+        <p class="margin-note">14 million people sat through a lesson about why he stopped teaching.</p>
+        <p>The material is anecdotal and domestic: his mother&rsquo;s disciplinary methods, a brother-in-law, a wedding envelope that reached the wrong house. What sets it apart is what is missing from it. He calls his own work <span class="hl">clean comedy</span>, and treats that as the point rather than a limitation.</p>
         <blockquote class="quote">
-          &ldquo;It&rsquo;s clean and family-friendly. But I would love it if you bring your parents along.&rdquo;
+          It&rsquo;s clean and family-friendly. But I would love it if you bring your parents along.
           <cite>Aashish Solanki, interviewed by DeadAnt</cite>
         </blockquote>
       </div>
-      <div class="facts" data-reveal>
-        <dl>
-          <dt>Base</dt><dd>Delhi, India</dd>
-          <dt>Language</dt><dd>Hindi</dd>
-          <dt>Style</dt><dd>Clean &middot; Anecdotal</dd>
-          <dt>Won</dt><dd>Comicstaan S3, 2022</dd>
-          <dt>Platform</dt><dd>Amazon Prime Video</dd>
-          <dt>Before comedy</dt><dd>School teacher</dd>
-          <dt>Solo show</dt><dd>Good Boy, Better Show</dd>
-          <dt>Instagram</dt><dd>@ashishsolanki_1</dd>
-          <dt>YouTube</dt><dd>@ashishsolanki_1</dd>
-        </dl>
+      <div data-reveal style="--rot:1.2deg">
+        <div class="idcard">
+          <h3>Aashish Solanki</h3>
+          <p class="sub">Stand-up comedian &middot; Delhi</p>
+          <dl>
+            <dt>Language</dt><dd>Hindi</dd>
+            <dt>Style</dt><dd>Clean, anecdotal</dd>
+            <dt>Won</dt><dd>Comicstaan S3</dd>
+            <dt>Year</dt><dd>2022</dd>
+            <dt>Platform</dt><dd>Prime Video</dd>
+            <dt>Previously</dt><dd>School teacher</dd>
+            <dt>Solo show</dt><dd>Good Boy, Better Show</dd>
+            <dt>Handle</dt><dd>@ashishsolanki_1</dd>
+          </dl>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="numbers">
+<section id="numbers" class="paper-bg" style="background:var(--paper-2)">
   <div class="wrap">
-    <div class="sh"><span class="tag">Reach</span><h2>By the numbers</h2></div>
-    <div class="stats" data-reveal>
-      <div class="stat"><div class="num" data-count="1.65" data-dec="2" data-suffix="M">0</div><div class="lbl">YouTube subscribers</div></div>
-      <div class="stat"><div class="num" data-count="752" data-suffix="K">0</div><div class="lbl">Instagram followers</div></div>
-      <div class="stat"><div class="num" data-count="503" data-suffix="">0</div><div class="lbl">Videos published</div></div>
-      <div class="stat"><div class="num" data-count="18" data-suffix="M">0</div><div class="lbl">Views, biggest set</div></div>
+    <div class="sh" data-reveal><span class="tag">Marks obtained</span><h2>The report card</h2></div>
+    <div class="report" data-reveal>
+      <div class="top"><b>Annual Progress Report</b><span>Session 2026</span></div>
+      <div class="rows">
+        <div class="rrow"><span class="subject">YouTube subscribers<em>Channel &middot; @ashishsolanki_1</em></span><span class="num" data-count="1.65" data-dec="2" data-suffix="M">0</span></div>
+        <div class="rrow"><span class="subject">Instagram followers<em>Approximate &mdash; see notes</em></span><span class="num" data-count="752" data-suffix="K">0</span></div>
+        <div class="rrow"><span class="subject">Videos published<em>Sets, shorts and clips</em></span><span class="num" data-count="503" data-suffix="">0</span></div>
+        <div class="rrow"><span class="subject">Views on the biggest set<em>Behen Ki Shaadi</em></span><span class="num" data-count="18" data-suffix="M">0</span></div>
+      </div>
     </div>
-    <p class="note" style="margin-top:22px" data-reveal>Read from his official YouTube channel and public Instagram profile in September 2026. The Instagram figure is the one shown on his profile listing; a third-party tracker reported a lower number earlier in the year, so treat it as approximate. Sources are listed in <code>notes.md</code>.</p>
+    <p class="note" style="margin:22px auto 0;text-align:center" data-reveal>Read from his official YouTube channel and public Instagram profile in September 2026. The Instagram figure comes from his profile listing; a third-party tracker reported a lower number earlier in the year, so treat it as approximate. Sources are in <code>notes.md</code>.</p>
   </div>
 </section>
 
-<section id="watch" class="band">
+<section id="watch" class="paper-bg">
   <div class="wrap">
-    <div class="sh"><span class="tag">Watch</span><h2>Sets &amp; specials</h2></div>
+    <div class="sh" data-reveal><span class="tag">Homework</span><h2>Sets &amp; specials</h2></div>
     <div class="grid three">
-      <article class="vid" data-reveal>
+      <article class="vid" data-reveal><span class="tape" aria-hidden="true"></span>
         <button class="yt" data-yt="5EFTzkb6jho" aria-label="Play: Behen Ki Shaadi — Stand Up Comedy by Aashish Solanki">
           <img src="images/thumb-behen-ki-shaadi.jpg" alt="Thumbnail for Aashish Solanki's set Behen Ki Shaadi" width="1280" height="720" loading="lazy" srcset="images/thumb-behen-ki-shaadi-640.jpg 640w, images/thumb-behen-ki-shaadi-960.jpg 960w, images/thumb-behen-ki-shaadi.jpg 1280w" sizes="(max-width:619px) 92vw, (max-width:999px) 46vw, 360px"><span class="play"></span>
         </button>
-        <div class="meta"><h3>Behen Ki Shaadi</h3><p>18.1M views &middot; His first upload after Comicstaan</p></div>
+        <div class="meta"><h3>Behen Ki Shaadi</h3><p>18.1M views &middot; his first upload after Comicstaan</p></div>
       </article>
-      <article class="vid" data-reveal>
+      <article class="vid" data-reveal><span class="tape" aria-hidden="true"></span>
         <button class="yt" data-yt="jaMEkbILo2Q" aria-label="Play: Mera Teaching Career — Stand Up Comedy by Aashish Solanki">
           <img src="images/thumb-mera-teaching-career.jpg" alt="Thumbnail for Aashish Solanki's set Mera Teaching Career" width="1280" height="720" loading="lazy" srcset="images/thumb-mera-teaching-career-640.jpg 640w, images/thumb-mera-teaching-career-960.jpg 960w, images/thumb-mera-teaching-career.jpg 1280w" sizes="(max-width:619px) 92vw, (max-width:999px) 46vw, 360px"><span class="play"></span>
         </button>
-        <div class="meta"><h3>Mera Teaching Career</h3><p>14.1M views &middot; Teacher vs students</p></div>
+        <div class="meta"><h3>Mera Teaching Career</h3><p>14.1M views &middot; teacher vs students</p></div>
       </article>
-      <article class="vid" data-reveal>
+      <article class="vid" data-reveal><span class="tape" aria-hidden="true"></span>
         <button class="yt" data-yt="oQ98C_8ATQY" aria-label="Play: Jiju Aur Jeevansathi — Stand Up Comedy by Aashish Solanki">
           <img src="images/thumb-jiju-aur-jeevansathi.jpg" alt="Thumbnail for Aashish Solanki's set Jiju Aur Jeevansathi" width="1280" height="720" loading="lazy" srcset="images/thumb-jiju-aur-jeevansathi-640.jpg 640w, images/thumb-jiju-aur-jeevansathi-960.jpg 960w, images/thumb-jiju-aur-jeevansathi.jpg 1280w" sizes="(max-width:619px) 92vw, (max-width:999px) 46vw, 360px"><span class="play"></span>
         </button>
-        <div class="meta"><h3>Jiju Aur Jeevansathi</h3><p>5.34M views &middot; Stand-up</p></div>
+        <div class="meta"><h3>Jiju Aur Jeevansathi</h3><p>5.34M views &middot; stand-up</p></div>
       </article>
-      <article class="vid" data-reveal>
+      <article class="vid" data-reveal><span class="tape" aria-hidden="true"></span>
         <button class="yt" data-yt="CbbWYQ6dLoE" aria-label="Play: Papa In Police — Stand Up Comedy by Aashish Solanki">
           <img src="images/thumb-papa-in-police.jpg" alt="Thumbnail for Aashish Solanki's set Papa In Police" width="1280" height="720" loading="lazy" srcset="images/thumb-papa-in-police-640.jpg 640w, images/thumb-papa-in-police-960.jpg 960w, images/thumb-papa-in-police.jpg 1280w" sizes="(max-width:619px) 92vw, (max-width:999px) 46vw, 360px"><span class="play"></span>
         </button>
-        <div class="meta"><h3>Papa In Police</h3><p>4.63M views &middot; Stand-up</p></div>
+        <div class="meta"><h3>Papa In Police</h3><p>4.63M views &middot; stand-up</p></div>
       </article>
-      <article class="vid" data-reveal>
+      <article class="vid" data-reveal><span class="tape" aria-hidden="true"></span>
         <button class="yt" data-yt="7zYMRPGTDKc" aria-label="Play: Pyaari Maa — Stand Up Comedy by Aashish Solanki">
           <img src="images/thumb-pyaari-maa.jpg" alt="Thumbnail for Aashish Solanki's set Pyaari Maa" width="1280" height="720" loading="lazy" srcset="images/thumb-pyaari-maa-640.jpg 640w, images/thumb-pyaari-maa-960.jpg 960w, images/thumb-pyaari-maa.jpg 1280w" sizes="(max-width:619px) 92vw, (max-width:999px) 46vw, 360px"><span class="play"></span>
         </button>
-        <div class="meta"><h3>Pyaari Maa</h3><p>3.92M views &middot; Stand-up</p></div>
+        <div class="meta"><h3>Pyaari Maa</h3><p>3.92M views &middot; stand-up</p></div>
       </article>
-      <article class="vid" data-reveal>
+      <article class="vid" data-reveal><span class="tape" aria-hidden="true"></span>
         <button class="yt" data-yt="HdixTuRXfwA" aria-label="Play: BroCode Roast featuring Gaurav Kapoor, with Aashish Solanki">
           <img src="images/thumb-brocode-roast.jpg" alt="Thumbnail for the BroCode Roast episode with Aashish Solanki" width="1280" height="720" loading="lazy" srcset="images/thumb-brocode-roast-640.jpg 640w, images/thumb-brocode-roast-960.jpg 960w, images/thumb-brocode-roast.jpg 1280w" sizes="(max-width:619px) 92vw, (max-width:999px) 46vw, 360px"><span class="play"></span>
         </button>
-        <div class="meta"><h3>BroCode Roast &middot; ft. Gaurav Kapoor</h3><p>2.52M views &middot; Roast</p></div>
+        <div class="meta"><h3>BroCode Roast &middot; ft. Gaurav Kapoor</h3><p>2.52M views &middot; roast</p></div>
       </article>
     </div>
   </div>
 </section>
 
-<section id="tour">
+<section id="tour" class="board-bg">
   <div class="wrap">
-    <div class="sh"><span class="tag">Live</span><h2>Good Boy, Better Show</h2>
+    <div class="sh" data-reveal><span class="tag">Attendance register</span><h2>Good Boy, Better Show</h2>
       <p>The solo he has been touring for over a year &mdash; thirty shows across twenty-one cities, plus dates in Australia, New Zealand and the UAE.</p>
     </div>
-    <ul class="shows" data-reveal>
-      <li>
+    <div class="register" data-reveal>
+      <div class="reg-head"><span>&#10003;</span><span>Where to find the dates</span><span>Link</span></div>
+      <div class="reg-row">
+        <svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
         <span><h3>Every announced date</h3><span class="where">He keeps the current list on one links page &mdash; the only listing he maintains himself</span></span>
-        <a class="btn blue" href="https://linktr.ee/aashishsolanki" target="_blank" rel="noopener">All dates</a>
-      </li>
-      <li>
-        <span><h3>Follow for new cities</h3><span class="where">His District artist page announces shows as they go on sale</span></span>
+        <a class="btn chalk-y" href="https://linktr.ee/aashishsolanki" target="_blank" rel="noopener">All dates</a>
+      </div>
+      <div class="reg-row">
+        <svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
+        <span><h3>New cities as they go on sale</h3><span class="where">His District artist page announces shows first</span></span>
         <a class="btn" href="https://www.district.in/events/aashish-solanki/artist" target="_blank" rel="noopener">District</a>
-      </li>
-      <li>
+      </div>
+      <div class="reg-row">
+        <svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>
         <span><h3>BookMyShow</h3><span class="where">Where the solo tour has been ticketed</span></span>
         <a class="btn" href="https://in.bookmyshow.com/explore/comedy-shows" target="_blank" rel="noopener">BookMyShow</a>
-      </li>
-    </ul>
-    <p class="note" style="margin-top:22px" data-reveal>No dated shows were publicly listed on his District artist page when this site was built, so these link to the live listings rather than printing dates that would expire.</p>
+      </div>
+    </div>
+    <p class="note" style="margin:22px auto 0;text-align:center" data-reveal>No dated shows were publicly listed on his District artist page when this site was built, so these link to the live listings rather than printing dates that would expire.</p>
   </div>
 </section>
 
-<section id="screen" class="band">
+<section id="screen" class="paper-bg">
   <div class="wrap">
-    <div class="sh"><span class="tag">Screen &amp; stage</span><h2>Beyond his own channel</h2></div>
-    <div class="cards">
-      <div class="ccard" data-reveal>
-        <span class="tag">Amazon Prime Video</span>
-        <h3>Comicstaan Season 3</h3>
-        <p>Winner. The season premiered on 15 July 2022, with mentors including Rahul Subramanian and Sapan Verma coaching contestants through anecdotal, topical, improv, sketch, roast and observational rounds.</p>
-      </div>
-      <div class="ccard" data-reveal>
-        <span class="tag">Roast</span>
-        <h3>BroCode Roast</h3>
-        <p>Season 2 episode roasting Gaurav Kapoor &mdash; 2.52 million views, and proof the clean rule is a choice rather than a ceiling.</p>
-      </div>
-      <div class="ccard" data-reveal>
-        <span class="tag">Guest spots</span>
-        <h3>The circuit</h3>
-        <p>Turns up across the scene &mdash; Gaurav Kapoor&rsquo;s <em>Lie Hard</em>, Vivek Samtani&rsquo;s channel, Kaustubh Agarwal&rsquo;s <em>Akal Ke Ghode</em> and Vidit Sharma&rsquo;s <em>Loose Emotions</em>.</p>
-      </div>
-      <div class="ccard" data-reveal>
-        <span class="tag">Production</span>
-        <h3>Play Pause Studio</h3>
-        <p>Shoots and cuts his specials. Early uploads credit Anubhav Singh Bassi, Aakash Gupta and Nishant Suri with special thanks.</p>
-      </div>
+    <div class="sh" data-reveal><span class="tag">Extra credit</span><h2>Beyond his own channel</h2></div>
+    <div class="notes">
+      <div class="note-card" data-reveal><span class="tag">Prime Video</span><h3>Comicstaan S3</h3><p>Winner. Premiered 15 July 2022, with mentors including Rahul Subramanian and Sapan Verma across anecdotal, topical, improv, sketch, roast and observational rounds.</p></div>
+      <div class="note-card" data-reveal><span class="tag">Roast</span><h3>BroCode Roast</h3><p>Season 2 episode roasting Gaurav Kapoor &mdash; 2.52M views, and proof the clean rule is a choice rather than a ceiling.</p></div>
+      <div class="note-card" data-reveal><span class="tag">Guest spots</span><h3>The circuit</h3><p>Gaurav Kapoor&rsquo;s <em>Lie Hard</em>, Vivek Samtani&rsquo;s channel, Kaustubh Agarwal&rsquo;s <em>Akal Ke Ghode</em> and Vidit Sharma&rsquo;s <em>Loose Emotions</em>.</p></div>
+      <div class="note-card" data-reveal><span class="tag">Crew</span><h3>Play Pause Studio</h3><p>Shoots and cuts his specials. Early uploads thank Anubhav Singh Bassi, Aakash Gupta and Nishant Suri.</p></div>
     </div>
   </div>
 </section>
 
-<section id="gallery">
+<section id="gallery" class="board-bg">
   <div class="wrap">
-    <div class="sh"><span class="tag">Stills</span><h2>Gallery</h2></div>
-    <div class="gal" data-reveal>
-      <figure><img src="images/thumb-behen-ki-shaadi.jpg" alt="Aashish Solanki performing Behen Ki Shaadi" width="1280" height="720" loading="lazy" srcset="images/thumb-behen-ki-shaadi-640.jpg 640w, images/thumb-behen-ki-shaadi-960.jpg 960w, images/thumb-behen-ki-shaadi.jpg 1280w" sizes="(max-width:839px) 46vw, 31vw"><figcaption>Behen Ki Shaadi</figcaption></figure>
-      <figure><img src="images/thumb-mera-teaching-career.jpg" alt="Aashish Solanki performing Mera Teaching Career" width="1280" height="720" loading="lazy" srcset="images/thumb-mera-teaching-career-640.jpg 640w, images/thumb-mera-teaching-career-960.jpg 960w, images/thumb-mera-teaching-career.jpg 1280w" sizes="(max-width:839px) 46vw, 31vw"><figcaption>Mera Teaching Career</figcaption></figure>
-      <figure><img src="images/thumb-pyaari-maa.jpg" alt="Aashish Solanki performing Pyaari Maa" width="1280" height="720" loading="lazy" srcset="images/thumb-pyaari-maa-640.jpg 640w, images/thumb-pyaari-maa-960.jpg 960w, images/thumb-pyaari-maa.jpg 1280w" sizes="(max-width:839px) 46vw, 31vw"><figcaption>Pyaari Maa</figcaption></figure>
-      <figure><img src="images/thumb-papa-in-police.jpg" alt="Aashish Solanki performing Papa In Police" width="1280" height="720" loading="lazy" srcset="images/thumb-papa-in-police-640.jpg 640w, images/thumb-papa-in-police-960.jpg 960w, images/thumb-papa-in-police.jpg 1280w" sizes="(max-width:839px) 46vw, 31vw"><figcaption>Papa In Police</figcaption></figure>
-      <figure><img src="images/thumb-jiju-aur-jeevansathi.jpg" alt="Aashish Solanki performing Jiju Aur Jeevansathi" width="1280" height="720" loading="lazy" srcset="images/thumb-jiju-aur-jeevansathi-640.jpg 640w, images/thumb-jiju-aur-jeevansathi-960.jpg 960w, images/thumb-jiju-aur-jeevansathi.jpg 1280w" sizes="(max-width:839px) 46vw, 31vw"><figcaption>Jiju Aur Jeevansathi</figcaption></figure>
-      <figure><img src="images/thumb-comicstaan-lifafa.jpg" alt="Aashish Solanki performing on Comicstaan" width="1280" height="720" loading="lazy" srcset="images/thumb-comicstaan-lifafa-640.jpg 640w, images/thumb-comicstaan-lifafa-960.jpg 960w, images/thumb-comicstaan-lifafa.jpg 1280w" sizes="(max-width:839px) 46vw, 31vw"><figcaption>Comicstaan &middot; Prime Video</figcaption></figure>
+    <div class="sh" data-reveal><span class="tag">Pinned up</span><h2>Gallery</h2></div>
+    <div class="gal">
+      <figure data-reveal><span class="tape" aria-hidden="true"></span><img src="images/thumb-behen-ki-shaadi.jpg" alt="Aashish Solanki performing Behen Ki Shaadi" width="1280" height="720" loading="lazy" srcset="images/thumb-behen-ki-shaadi-640.jpg 640w, images/thumb-behen-ki-shaadi-960.jpg 960w, images/thumb-behen-ki-shaadi.jpg 1280w" sizes="(max-width:859px) 46vw, 31vw"><figcaption>Behen Ki Shaadi</figcaption></figure>
+      <figure data-reveal><span class="tape" aria-hidden="true"></span><img src="images/thumb-mera-teaching-career.jpg" alt="Aashish Solanki performing Mera Teaching Career" width="1280" height="720" loading="lazy" srcset="images/thumb-mera-teaching-career-640.jpg 640w, images/thumb-mera-teaching-career-960.jpg 960w, images/thumb-mera-teaching-career.jpg 1280w" sizes="(max-width:859px) 46vw, 31vw"><figcaption>Mera Teaching Career</figcaption></figure>
+      <figure data-reveal><span class="tape" aria-hidden="true"></span><img src="images/thumb-pyaari-maa.jpg" alt="Aashish Solanki performing Pyaari Maa" width="1280" height="720" loading="lazy" srcset="images/thumb-pyaari-maa-640.jpg 640w, images/thumb-pyaari-maa-960.jpg 960w, images/thumb-pyaari-maa.jpg 1280w" sizes="(max-width:859px) 46vw, 31vw"><figcaption>Pyaari Maa</figcaption></figure>
+      <figure data-reveal><span class="tape" aria-hidden="true"></span><img src="images/thumb-papa-in-police.jpg" alt="Aashish Solanki performing Papa In Police" width="1280" height="720" loading="lazy" srcset="images/thumb-papa-in-police-640.jpg 640w, images/thumb-papa-in-police-960.jpg 960w, images/thumb-papa-in-police.jpg 1280w" sizes="(max-width:859px) 46vw, 31vw"><figcaption>Papa In Police</figcaption></figure>
+      <figure data-reveal><span class="tape" aria-hidden="true"></span><img src="images/thumb-jiju-aur-jeevansathi.jpg" alt="Aashish Solanki performing Jiju Aur Jeevansathi" width="1280" height="720" loading="lazy" srcset="images/thumb-jiju-aur-jeevansathi-640.jpg 640w, images/thumb-jiju-aur-jeevansathi-960.jpg 960w, images/thumb-jiju-aur-jeevansathi.jpg 1280w" sizes="(max-width:859px) 46vw, 31vw"><figcaption>Jiju Aur Jeevansathi</figcaption></figure>
+      <figure data-reveal><span class="tape" aria-hidden="true"></span><img src="images/thumb-comicstaan-lifafa.jpg" alt="Aashish Solanki performing on Comicstaan" width="1280" height="720" loading="lazy" srcset="images/thumb-comicstaan-lifafa-640.jpg 640w, images/thumb-comicstaan-lifafa-960.jpg 960w, images/thumb-comicstaan-lifafa.jpg 1280w" sizes="(max-width:859px) 46vw, 31vw"><figcaption>Comicstaan &middot; Prime Video</figcaption></figure>
     </div>
   </div>
 </section>
 
-<section id="booking" class="band">
+<section id="booking" class="paper-bg ruled">
   <div class="wrap">
-    <div class="sh"><span class="tag">Get in touch</span><h2>Booking &amp; enquiries</h2></div>
+    <div class="sh" data-reveal><span class="tag">Leave application</span><h2>Booking &amp; enquiries</h2></div>
     <div class="contact">
-      <div data-reveal>
-        <p class="note" style="margin:0 0 22px">Corporate shows, college fests, theatre dates, private events and brand work. Submitting opens your own mail app with everything filled in &mdash; nothing is sent or stored by this page.</p>
+      <div data-reveal style="--rot:-.5deg">
+        <p class="note" style="margin:0 0 24px">Corporate shows, college fests, theatre dates, private events and brand work. Submitting opens your own mail app with everything filled in &mdash; nothing is sent or stored by this page.</p>
         <form id="bookForm" novalidate>
           <div class="row">
             <label>Your name <input type="text" name="name" autocomplete="name" required></label>
@@ -469,16 +600,16 @@ section[id],div[id]{scroll-margin-top:84px}
             <label>City &amp; date <input type="text" name="when" placeholder="Pune, 18 Dec"></label>
           </div>
           <label>Details <textarea name="msg" placeholder="Audience size, venue, set length, budget range."></textarea></label>
-          <div><button class="btn blue" type="submit">Send enquiry</button></div>
+          <div><button class="btn ink" type="submit">Send enquiry</button></div>
           <p class="note" id="formNote" role="status" aria-live="polite"></p>
         </form>
       </div>
-      <div data-reveal>
+      <div data-reveal style="--rot:.6deg">
         <ul class="socials">
           <li><a href="https://www.youtube.com/@ashishsolanki_1" target="_blank" rel="noopener"><span class="h">YouTube</span><span class="v">@ashishsolanki_1 &rarr;</span></a></li>
           <li><a href="https://www.instagram.com/ashishsolanki_1/" target="_blank" rel="noopener"><span class="h">Instagram</span><span class="v">@ashishsolanki_1 &rarr;</span></a></li>
           <li><a href="https://linktr.ee/aashishsolanki" target="_blank" rel="noopener"><span class="h">Live shows</span><span class="v">linktr.ee/aashishsolanki &rarr;</span></a></li>
-          <li><a href="https://www.district.in/events/aashish-solanki/artist" target="_blank" rel="noopener"><span class="h">Tickets</span><span class="v">District artist page &rarr;</span></a></li>
+          <li><a href="https://www.district.in/events/aashish-solanki/artist" target="_blank" rel="noopener"><span class="h">Tickets</span><span class="v">District &rarr;</span></a></li>
           <li><a href="mailto:info.aashishsolanki@gmail.com"><span class="h">Business</span><span class="v">info.aashishsolanki@gmail.com &rarr;</span></a></li>
         </ul>
       </div>
@@ -498,10 +629,9 @@ section[id],div[id]{scroll-margin-top:84px}
 (function(){
   "use strict";
 
-  /* Opened by double-clicking the file? Say so, because third-party embeds cannot work there. */
   if (location.protocol === 'file:') {
     var fn = document.createElement('div');
-    fn.setAttribute('role', 'note');
+    fn.setAttribute('role','note');
     fn.style.cssText = 'position:relative;z-index:99;padding:9px 16px;text-align:center;' +
       'font:12px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;' +
       'background:#141414;color:#f4f4f4';
@@ -513,9 +643,26 @@ section[id],div[id]{scroll-margin-top:84px}
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  var rev = [].slice.call(document.querySelectorAll('[data-reveal]'));
-  if (reduce || !('IntersectionObserver' in window)) { rev.forEach(function(el){ el.classList.add('is-in'); }); }
-  else {
+  /* Write the hero name on letter by letter, like chalk. Screen readers still get the
+     whole word, because the accessible name is set on the wrapper. */
+  [].slice.call(document.querySelectorAll('[data-split]')).forEach(function(el, w){
+    var word = el.textContent;
+    el.setAttribute('aria-label', word);
+    el.textContent = '';
+    word.split('').forEach(function(c, i){
+      var s = document.createElement('span');
+      s.className = 'ch';
+      s.setAttribute('aria-hidden','true');
+      s.textContent = c;
+      if (!reduce) s.style.animationDelay = (0.16 + w * 0.26 + i * 0.045).toFixed(3) + 's';
+      el.appendChild(s);
+    });
+  });
+
+  var rev = [].slice.call(document.querySelectorAll('[data-reveal], .hl'));
+  if (reduce || !('IntersectionObserver' in window)) {
+    rev.forEach(function(el){ el.classList.add('is-in'); });
+  } else {
     var ro = new IntersectionObserver(function(es){
       es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); ro.unobserve(e.target); } });
     }, { threshold:0.12, rootMargin:'0px 0px -8% 0px' });
@@ -525,9 +672,14 @@ section[id],div[id]{scroll-margin-top:84px}
   function runCount(el){
     var target = parseFloat(el.dataset.count), dec = parseInt(el.dataset.dec||'0',10), sfx = el.dataset.suffix||'';
     if (reduce){ el.textContent = target.toFixed(dec)+sfx; return; }
-    var t0=null, dur=1600;
-    function step(ts){ if(!t0) t0=ts; var p=Math.min((ts-t0)/dur,1), e=1-Math.pow(1-p,3);
-      el.textContent=(target*e).toFixed(dec)+sfx; if(p<1) requestAnimationFrame(step); }
+    var t0=null, dur=1500;
+    function step(ts){
+      if(!t0) t0=ts;
+      var p=Math.min((ts-t0)/dur,1), e=1-Math.pow(1-p,3);
+      el.textContent=(target*e).toFixed(dec)+sfx;
+      if(p<1) requestAnimationFrame(step);
+      else { var row = el.closest('.rrow'); if (row) row.classList.add('stamped'); }   /* the teacher's stamp */
+    }
     requestAnimationFrame(step);
   }
   var nums = [].slice.call(document.querySelectorAll('[data-count]'));
@@ -535,7 +687,7 @@ section[id],div[id]{scroll-margin-top:84px}
   else {
     var co = new IntersectionObserver(function(es){
       es.forEach(function(e){ if(e.isIntersecting){ runCount(e.target); co.unobserve(e.target); } });
-    }, { threshold:0.4 });
+    }, { threshold:0.5 });
     nums.forEach(function(el){ co.observe(el); });
   }
 
@@ -544,7 +696,6 @@ section[id],div[id]{scroll-margin-top:84px}
     var btn = ev.target.closest ? ev.target.closest('.yt') : null;
     if (!btn) return;
     var id = btn.getAttribute('data-yt');
-    /* YouTube refuses to embed into a file:// page (its origin is null), so open the video instead */
     if (FILE_MODE) { window.open('https://www.youtube.com/watch?v=' + id, '_blank', 'noopener'); return; }
     var f = document.createElement('iframe');
     f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
